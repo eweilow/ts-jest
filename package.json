@@ -64,21 +64,7 @@
     "mkdirp": "0.x",
     "resolve": "1.x",
     "semver": "^5.5",
-    "yargs-parser": "10.x"
-  },
-  "peerDependencies": {
-    "jest": ">=24 <25"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "post-commit": "git reset"
-    }
-  },
-  "devDependencies": {
-    "@commitlint/cli": "7.x",
-    "@commitlint/config-conventional": "7.x",
+    "yargs-parser": "10.x",
     "@types/babel__core": "7.x",
     "@types/buffer-from": "latest",
     "@types/cross-spawn": "latest",
@@ -94,6 +80,21 @@
     "@types/resolve": "latest",
     "@types/semver": "latest",
     "@types/yargs": "latest",
+    "typescript": "3.x"
+  },
+  "peerDependencies": {
+    "jest": ">=24 <25"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "post-commit": "git reset"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "7.x",
+    "@commitlint/config-conventional": "7.x",
     "conventional-changelog-cli": "2.x",
     "cross-spawn": "latest",
     "eslint": "latest",
@@ -111,8 +112,7 @@
     "source-map": "latest",
     "tslint": "latest",
     "tslint-config-prettier": "latest",
-    "tslint-plugin-prettier": "latest",
-    "typescript": "3.x"
+    "tslint-plugin-prettier": "latest"
   },
   "lint-staged": {
     "linters": {
